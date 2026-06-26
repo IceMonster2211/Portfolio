@@ -4,9 +4,39 @@ import time
 from flask import Flask, render_template, request, redirect, url_for, session, abort
 from config import Config
 from models import db, Contact
+from flask_talisman import Talisman
 
 app = Flask(__name__)
 app.config.from_object(Config)
+
+# Content Security Policy: whitelist trusted sources for resources
+csp = {
+    'default-src': '\'self\'',
+    'font-src': [
+        '\'self\'',
+        'fonts.googleapis.com',
+        'fonts.gstatic.com',
+        'cdnjs.cloudflare.com'
+    ],
+    'style-src': [
+        '\'self\'',
+        'fonts.googleapis.com',
+        'cdnjs.cloudflare.com',
+        '\'unsafe-inline\''
+    ],
+    'img-src': [
+        '\'self\'',
+        'avatars.githubusercontent.com',
+        'data:'
+    ],
+    'script-src': [
+        '\'self\'',
+        '\'unsafe-inline\''
+    ]
+}
+
+# Protect headers and enforce HTTPS (except in local debug mode)
+Talisman(app, content_security_policy=csp, force_https=not app.debug)
 
 # Initialize database with the app
 db.init_app(app)
