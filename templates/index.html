@@ -1,0 +1,306 @@
+{% extends "layout.html" %}
+
+{% block title %}❄️ Home - My Portfolio{% endblock %}
+
+{% block content %}
+<!-- ===== HERO ===== -->
+<section id="hero">
+    <div class="blizzard-container"></div>
+    <div class="hero-content">
+        <img src="https://avatars.githubusercontent.com/IceMonster2211" alt="IceMonster2211 GitHub Avatar" class="avatar">
+        <h1>Hello, I'm <span class="highlight ice-glow-name">IceMonster</span></h1>
+        <p class="subtitle">Python Engineer & Frosty Web Architect</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">bash - IceMonster2211@ArcticOS</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line"><span class="terminal-prompt">guest@ArcticOS:~$</span> systeminfo --user IceMonster2211</div>
+                        <div class="terminal-output">
+                            <span class="term-lbl">User:</span> IceMonster2211<br>
+                            <span class="term-lbl">OS:</span> ArcticOS v22.11 (Glacial Core)<br>
+                            <span class="term-lbl">Shell:</span> zsh (ice-shards)<br>
+                            <span class="term-lbl">Focus:</span> Python, Web Arch & Cybernetics<br>
+                            <span class="term-lbl">Status:</span> Frozen in Code ❄️
+                        </div>
+                        <div class="terminal-line"><span class="terminal-prompt">guest@ArcticOS:~$</span> git status</div>
+                        <div class="terminal-output">
+                            On branch main<br>
+                            Your branch is up to date.<br>
+                            nothing to commit, working tree clean
+                        </div>
+                        <div class="terminal-line"><span class="terminal-prompt">guest@ArcticOS:~$</span> <span class="terminal-cursor"></span></div>
+                    </div>
+                </div>
+                <div class="experience-badge">
+                    <span>2+</span> Years of Experience
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>A Little About Me</h3>
+                <p>I am a passionate software developer dedicated to building beautiful, fast, and user-friendly web experiences. With a strong foundation in Front-end and Python, I can craft full-stack applications from interactive UI designs to solid backend architectures.</p>
+                <p>When I'm not coding, I enjoy photography, reading tech books, and exploring new development tools. I believe continuous learning is the key to growth.</p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">Name:</span> IceMonster
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email:</span> lamhaiforwork@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location:</span> Hanoi, Vietnam
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Contact Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-flask"></i>
+                <span>Flask</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <span>Responsive Design</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-slider">
+            <div class="projects-track">
+                <!-- Group 1 -->
+                <div class="projects-group">
+                    <div class="project-card repo-card">
+                        <div class="repo-header">
+                            <i class="fab fa-github repo-icon"></i>
+                            <span class="repo-badge">Future Project</span>
+                        </div>
+                        <div class="project-info repo-info">
+                            <h3><a href="https://github.com/IceMonster2211" target="_blank">arctic-core</a></h3>
+                            <p>Core automation system and Python process runner tailored for arctic Linux environments.</p>
+                            <div class="project-tags repo-tags">
+                                <span>Python</span>
+                                <span>Linux</span>
+                                <span>Automation</span>
+                            </div>
+                            <div class="repo-stats">
+                                <span class="repo-stat"><i class="fas fa-circle lang-color-python"></i> Python</span>
+                                <span class="repo-stat"><i class="far fa-star"></i> 0</span>
+                                <span class="repo-stat"><i class="fas fa-code-branch"></i> 0</span>
+                            </div>
+                            <a href="https://github.com/IceMonster2211" target="_blank" class="btn btn-outline repo-btn">View Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card repo-card">
+                        <div class="repo-header">
+                            <i class="fab fa-github repo-icon"></i>
+                            <span class="repo-badge">Future Project</span>
+                        </div>
+                        <div class="project-info repo-info">
+                            <h3><a href="https://github.com/IceMonster2211" target="_blank">glacier-api</a></h3>
+                            <p>High-performance RESTful API powered by Flask with Neon and Supabase PostgreSQL integration.</p>
+                            <div class="project-tags repo-tags">
+                                <span>Flask</span>
+                                <span>SQLAlchemy</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="repo-stats">
+                                <span class="repo-stat"><i class="fas fa-circle lang-color-python"></i> Python</span>
+                                <span class="repo-stat"><i class="far fa-star"></i> 0</span>
+                                <span class="repo-stat"><i class="fas fa-code-branch"></i> 0</span>
+                            </div>
+                            <a href="https://github.com/IceMonster2211" target="_blank" class="btn btn-outline repo-btn">View Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card repo-card">
+                        <div class="repo-header">
+                            <i class="fab fa-github repo-icon"></i>
+                            <span class="repo-badge">Future Project</span>
+                        </div>
+                        <div class="project-info repo-info">
+                            <h3><a href="https://github.com/IceMonster2211" target="_blank">frostbite-ui</a></h3>
+                            <p>An ultra-premium, dark glassmorphism component library built for frosty responsive web interfaces.</p>
+                            <div class="project-tags repo-tags">
+                                <span>JavaScript</span>
+                                <span>CSS3</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="repo-stats">
+                                <span class="repo-stat"><i class="fas fa-circle lang-color-js"></i> JavaScript</span>
+                                <span class="repo-stat"><i class="far fa-star"></i> 0</span>
+                                <span class="repo-stat"><i class="fas fa-code-branch"></i> 0</span>
+                            </div>
+                            <a href="https://github.com/IceMonster2211" target="_blank" class="btn btn-outline repo-btn">View Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Group 2 (Duplicate for seamless loop) -->
+                <div class="projects-group" aria-hidden="true">
+                    <div class="project-card repo-card">
+                        <div class="repo-header">
+                            <i class="fab fa-github repo-icon"></i>
+                            <span class="repo-badge">Future Project</span>
+                        </div>
+                        <div class="project-info repo-info">
+                            <h3><a href="https://github.com/IceMonster2211" target="_blank">arctic-core</a></h3>
+                            <p>Core automation system and Python process runner tailored for arctic Linux environments.</p>
+                            <div class="project-tags repo-tags">
+                                <span>Python</span>
+                                <span>Linux</span>
+                                <span>Automation</span>
+                            </div>
+                            <div class="repo-stats">
+                                <span class="repo-stat"><i class="fas fa-circle lang-color-python"></i> Python</span>
+                                <span class="repo-stat"><i class="far fa-star"></i> 0</span>
+                                <span class="repo-stat"><i class="fas fa-code-branch"></i> 0</span>
+                            </div>
+                            <a href="https://github.com/IceMonster2211" target="_blank" class="btn btn-outline repo-btn">View Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card repo-card">
+                        <div class="repo-header">
+                            <i class="fab fa-github repo-icon"></i>
+                            <span class="repo-badge">Future Project</span>
+                        </div>
+                        <div class="project-info repo-info">
+                            <h3><a href="https://github.com/IceMonster2211" target="_blank">glacier-api</a></h3>
+                            <p>High-performance RESTful API powered by Flask with Neon and Supabase PostgreSQL integration.</p>
+                            <div class="project-tags repo-tags">
+                                <span>Flask</span>
+                                <span>SQLAlchemy</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="repo-stats">
+                                <span class="repo-stat"><i class="fas fa-circle lang-color-python"></i> Python</span>
+                                <span class="repo-stat"><i class="far fa-star"></i> 0</span>
+                                <span class="repo-stat"><i class="fas fa-code-branch"></i> 0</span>
+                            </div>
+                            <a href="https://github.com/IceMonster2211" target="_blank" class="btn btn-outline repo-btn">View Repo</a>
+                        </div>
+                    </div>
+                    <div class="project-card repo-card">
+                        <div class="repo-header">
+                            <i class="fab fa-github repo-icon"></i>
+                            <span class="repo-badge">Future Project</span>
+                        </div>
+                        <div class="project-info repo-info">
+                            <h3><a href="https://github.com/IceMonster2211" target="_blank">frostbite-ui</a></h3>
+                            <p>An ultra-premium, dark glassmorphism component library built for frosty responsive web interfaces.</p>
+                            <div class="project-tags repo-tags">
+                                <span>JavaScript</span>
+                                <span>CSS3</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="repo-stats">
+                                <span class="repo-stat"><i class="fas fa-circle lang-color-js"></i> JavaScript</span>
+                                <span class="repo-stat"><i class="far fa-star"></i> 0</span>
+                                <span class="repo-stat"><i class="fas fa-code-branch"></i> 0</span>
+                            </div>
+                            <a href="https://github.com/IceMonster2211" target="_blank" class="btn btn-outline repo-btn">View Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Feel free to drop a message. I'll get back to you as soon as possible.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>lamhaiforwork@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hanoi, Vietnam</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" action="/contact" method="POST">
+                <!-- CSRF Protection Token -->
+                <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+                
+                <!-- Anti-Spam Honeypot Field (hidden from human users) -->
+                <div style="display: none;">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
